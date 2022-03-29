@@ -9,11 +9,6 @@
 get_ipython().system(' pip install selenium')
 
 
-# In[7]:
-
-
-pip install webdriver-manager
-
 
 # In[29]:
 
