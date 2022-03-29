@@ -3,14 +3,12 @@
 
 
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.firefox.service import Service
+from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
 
-chrome_options = Options()
-chrome_options.add_argument("--headless")
 
 #import beautiful soup plus
 import requests # allow you to send HTTP requests
@@ -24,10 +22,8 @@ import pandas as pd
 
 
 #call the Chrome webdriver browser 
-driver = webdriver.Chrome(
-        ChromeDriverManager().install(),
-        options=chrome_options
-        )
+#call the webdriver browser 
+driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
 
 #open a webpage
 driver.get('https://www.nps.gov/planyourvisit/alerts.htm')
