@@ -18,12 +18,11 @@ import csv #allows you to save csv
 import pandas as pd
 
 
-# In[30]:
-
-
-#call the Chrome webdriver browser 
 #call the webdriver browser 
-driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
+options = Options()
+options.headless = True
+driver = webdriver.Firefox(options=options)
+
 
 #open a webpage
 driver.get('https://www.nps.gov/planyourvisit/alerts.htm')
