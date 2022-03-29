@@ -3,8 +3,11 @@
 
 
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
 
 #import beautiful soup plus
 import requests # allow you to send HTTP requests
