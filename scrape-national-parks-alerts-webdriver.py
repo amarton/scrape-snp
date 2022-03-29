@@ -18,7 +18,10 @@ import pandas as pd
 
 
 #call the Chrome webdriver browser 
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver = webdriver.Chrome(
+        ChromeDriverManager().install(),
+        options=chrome_options
+        )
 
 #open a webpage
 driver.get('https://www.nps.gov/planyourvisit/alerts.htm')
