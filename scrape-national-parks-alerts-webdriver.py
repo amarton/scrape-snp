@@ -1,17 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
-#install package
-
-get_ipython().system(' pip install selenium')
-
-
-
-# In[29]:
-
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
