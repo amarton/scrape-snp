@@ -22,3 +22,22 @@ DevTools listening on ws://localhost:33755/devtools/browser/b888d586-2665-4027-a
 1648607889871	Marionette	INFO	Listening on port 45639
 1648607889925	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1648607894350	Marionette	INFO	Stopped listening on port 45639
+1648694109743	geckodriver	INFO	Listening on 127.0.0.1:60843
+1648694110144	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "48799" "-no-remote" "-profile" "/tmp/rust_mozprofileLLjQGE"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1648694113492	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLLjQGE/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48799/devtools/browser/645ef156-b658-40de-a0f2-ad40f6ef4cc2
+1648694116525	Marionette	INFO	Listening on port 35423
+1648694116593	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1648694119940	Marionette	INFO	Stopped listening on port 35423
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1105: Error: Sqlite.jsm has been shutdown. Cannot open connection to: /tmp/rust_mozprofileLLjQGE/protections.sqlite
