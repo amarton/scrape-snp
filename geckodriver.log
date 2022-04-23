@@ -325,3 +325,19 @@ Read port: 33409
 1650597323597	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: https://www.nps.gov/common/commonspot/customcf/alert_aggregation/alert-aggregation.js, line 250: ReferenceError: alerts_aggregation_json is not defined
 1650597328617	Marionette	INFO	Stopped listening on port 33409
+1650681525259	geckodriver	INFO	Listening on 127.0.0.1:53405
+1650681525699	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "55105" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileRC3pTG"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1650681537384	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRC3pTG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55105/devtools/browser/3afc627a-ac2f-4357-a3b8-4451853c53fa
+1650681544213	Marionette	INFO	Listening on port 44977
+Read port: 44977
+1650681544367	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1650681550459	Marionette	INFO	Stopped listening on port 44977
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
