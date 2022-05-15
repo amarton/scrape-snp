@@ -630,3 +630,17 @@ Read port: 44301
 1652498762021	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1652498766593	Marionette	INFO	Stopped listening on port 44301
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+1652583244164	geckodriver	INFO	Listening on 127.0.0.1:52165
+1652583244589	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "60087" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileVpAuoR"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1652583249747	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVpAuoR/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60087/devtools/browser/db89dab9-0d1d-4012-8592-5bc2e95ed535
+1652583252988	Marionette	INFO	Listening on port 35143
+Read port: 35143
+1652583253049	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1652583256669	Marionette	INFO	Stopped listening on port 35143
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
