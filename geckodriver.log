@@ -700,3 +700,20 @@ DevTools listening on ws://localhost:37835/devtools/browser/52e51b38-d4d8-4a8a-b
 Read port: 38847
 1652929416251	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1652929419630	Marionette	INFO	Stopped listening on port 38847
+1653015202967	geckodriver	INFO	Listening on 127.0.0.1:35561
+1653015203318	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "43741" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilexlOaBS"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1653015208815	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexlOaBS/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:43741/devtools/browser/fe5cf9ae-0d1e-4037-9c27-6cedd1fa18be
+1653015212867	Marionette	INFO	Listening on port 39805
+Read port: 39805
+1653015212988	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653015216302	Marionette	INFO	Stopped listening on port 39805
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
