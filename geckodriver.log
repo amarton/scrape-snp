@@ -717,3 +717,16 @@ JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Pha
 
 ###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
 
+1653099690160	geckodriver	INFO	Listening on 127.0.0.1:58297
+1653099690534	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "34169" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileCE9TwM"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1653099699194	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCE9TwM/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:34169/devtools/browser/2527a6bb-9e94-410f-87b1-9da319908767
+1653099704900	Marionette	INFO	Listening on port 38587
+Read port: 38587
+1653099705059	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653099709011	Marionette	INFO	Stopped listening on port 38587
