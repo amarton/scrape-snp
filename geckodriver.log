@@ -1144,3 +1144,20 @@ console.error: "Error during quit-application-granted: [Exception... \"File erro
 
 ###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
 
+1655693705821	geckodriver	INFO	Listening on 127.0.0.1:60937
+1655693706084	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "41387" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilelppimO"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1655693710282	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:41387
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelppimO/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+1655693714142	Marionette	INFO	Listening on port 39781
+DevTools listening on ws://localhost:41387/devtools/browser/6fedef38-ba5f-45f3-b454-7d1f9632d037
+Read port: 39781
+1655693714278	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655693717702	Marionette	INFO	Stopped listening on port 39781
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1969\"  data: no]"
