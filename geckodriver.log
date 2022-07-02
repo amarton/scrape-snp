@@ -1358,3 +1358,20 @@ Read port: 41025
 1656646227149	Marionette	INFO	Stopped listening on port 41025
 Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
 console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1969\"  data: no]"
+1656731675951	geckodriver	INFO	Listening on 127.0.0.1:47491
+1656731676296	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "41357" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileTyElLi"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1656731680702	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:41357
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileTyElLi/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+1656731683549	Marionette	INFO	Listening on port 45667
+DevTools listening on ws://localhost:41357/devtools/browser/663ebbda-72da-40e9-8a17-2239e9409ead
+Read port: 45667
+1656731683648	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656731686786	Marionette	INFO	Stopped listening on port 45667
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1969\"  data: no]"
