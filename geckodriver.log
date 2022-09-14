@@ -2739,3 +2739,21 @@ DevTools listening on ws://localhost:51045/devtools/browser/9e6aefa8-5f1b-4ad1-a
 1663040931483	Marionette	INFO	Stopped listening on port 45489
 Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
 console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 2013\"  data: no]"
+1663126948967	geckodriver	INFO	Listening on 127.0.0.1:50805
+1663126949187	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "42969" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileg68DwO"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1663126958370	Marionette	INFO	Marionette enabled
+1663126958385	Marionette	INFO	Listening on port 46189
+Read port: 46189
+WebDriver BiDi listening on ws://localhost:42969
+Read port: 46189
+1663126959701	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileg68DwO/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:42969/devtools/browser/680ee880-ad27-4ea4-986c-fb585298b920
+1663126967653	Marionette	INFO	Stopped listening on port 46189
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 2013\"  data: no]"
