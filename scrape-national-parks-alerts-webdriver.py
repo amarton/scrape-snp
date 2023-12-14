@@ -26,17 +26,23 @@ options.headless = True
 driver = webdriver.Firefox(options=options)
 
 
+
 #open a webpage
 driver.get('https://www.nps.gov/planyourvisit/alerts.htm')
 
 # Wait a few seconds for load
 WebDriverWait(driver, 20)
 
-# select the state dropdown
-selectState = Select(driver.find_element(By.ID, 'form-state'))
+# Find the by state button
+stateButton = driver.find_element(By.XPATH, '/html/body/div[7]/div[3]/div/div[2]/div[2]/div/div/div/div/div/div[2]/div/div[1]/div[1]/div[1]/span/div/button')
 
-# select state by visible text
-selectState.select_by_visible_text('Virginia')
+# clicking on the by state button
+stateButton.click()
+
+
+# select VA from dropdown
+selectState = driver.find_element(by=By.XPATH, value="/html/body/div[7]/div[3]/div/div[2]/div[2]/div/div/div/div/div/div[2]/div/div[1]/div[1]/div[1]/span/div/div/button[52]/span/input");
+selectState.click();
 
 
 # Wait a few seconds for load
@@ -44,14 +50,14 @@ WebDriverWait(driver, 20)
 
 
 # Find the park button
-parkButton = driver.find_element(By.XPATH, '//*[@id="CS_CCF_5526806_5527806"]/div[1]/div[1]/div[3]/div/button')
+parkButton = driver.find_element(By.XPATH, '/html/body/div[7]/div[3]/div/div[2]/div[2]/div/div/div/div/div/div[2]/div/div[1]/div[1]/div[3]/span/div/button')
 
 # clicking on the park button
 parkButton.click()
 
 
 # select SNP
-selectPark = driver.find_element(By.XPATH, '//*[@id="CS_CCF_5526806_5527806"]/div[1]/div[1]/div[3]/div/ul/li[30]/a/label/input');
+selectPark = driver.find_element(By.XPATH, '/html/body/div[7]/div[3]/div/div[2]/div[2]/div/div/div/div/div/div[2]/div/div[1]/div[1]/div[3]/span/div/div/button[402]/span/input');
 selectPark.click();
 
 # Wait a few seconds for load
@@ -66,7 +72,7 @@ button.click()
 
 
 # find element by xpath -- the alerts
-results = driver.find_elements(by=By.XPATH, value="/html/body/div[7]/div[3]/div/div[2]/div[2]/div/div/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/ul/li")
+results = driver.find_elements(by=By.XPATH, value="/html/body/div[7]/div[3]/div/div[2]/div[2]/div/div/div/div/div/div[2]/div/div[2]/div[1]/ul/li")
 
 # print number of results
 print('Number of results', len(results))
