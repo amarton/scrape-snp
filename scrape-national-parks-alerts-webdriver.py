@@ -21,10 +21,10 @@ import pandas as pd
 
 
 #call the webdriver browser 
-options = Options()
-options.headless = True
-driver = webdriver.Firefox(options=options)
 
+options = webdriver.FirefoxOptions()
+options.headless = True
+webdriver.Firefox(options=options)
 
 
 #open a webpage
