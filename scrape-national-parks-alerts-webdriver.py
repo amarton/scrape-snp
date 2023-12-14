@@ -22,8 +22,8 @@ import pandas as pd
 
 #call the webdriver browser 
 
-options = Options()
-options.headless = True
+options = Options() 
+options.add_argument("-headless") 
 driver = webdriver.Firefox(options=options)
 
 
