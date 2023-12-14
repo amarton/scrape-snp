@@ -29,7 +29,7 @@ driver = webdriver.Chrome(options=options)
 driver.get('https://www.nps.gov/planyourvisit/alerts.htm')
 
 # Wait a few seconds for load
-WebDriverWait(driver, 20)
+WebDriverWait(driver, 100)
 
 # Find the by state button
 stateButton = driver.find_element(By.XPATH, '/html/body/div[7]/div[3]/div/div[2]/div[2]/div/div/div/div/div/div[2]/div/div[1]/div[1]/div[1]/span/div/button')
