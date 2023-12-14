@@ -24,7 +24,6 @@ import pandas as pd
 
 options = webdriver.FirefoxOptions()
 options.headless = True
-webdriver.Firefox(options=options)
 
 
 #open a webpage
