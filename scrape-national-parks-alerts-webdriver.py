@@ -3,12 +3,10 @@
 
 
 from selenium import webdriver
-from selenium.webdriver.firefox.service import Service
-from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.options import Options
 
 
 
@@ -22,9 +20,9 @@ import pandas as pd
 
 #call the webdriver browser 
 
-options = Options() 
-options.add_argument("-headless") 
-driver = webdriver.Firefox(options=options)
+options = Options()
+options.add_argument("--headless=new")
+driver = webdriver.Chrome(options=options)
 
 
 #open a webpage
